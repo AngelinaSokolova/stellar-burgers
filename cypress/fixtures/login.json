@@ -1,0 +1,9 @@
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGMyZjViMTE5ZDQ1MDAxYjRmNTVkMSIsImlhdCI6MTcyMTA0NzYyNiwiZXhwIjoxNzIxMDQ4ODI2fQ.xw1OO8IFjK_gF310-yjO_OQFl5I-Q4bb_JQmyS2vdkM",
+    "refreshToken": "44bfe7770a46049100c7493d1aab2b906f66469ab51c31ec6aeff87e6ce173f1424a217ad85ef983",
+    "user": {
+      "email": "qwe@test.ru",
+      "name": "asd"
+    }
+  }
