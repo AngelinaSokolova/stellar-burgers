@@ -17,6 +17,7 @@ export const registerUser = createAsyncThunk(
     const res = await registerUserApi(data);
     setCookie('accessToken', res.accessToken);
     localStorage.setItem('refreshToken', res.refreshToken);
+    console.log(res);
 
     return res;
   }
@@ -28,6 +29,7 @@ export const loginUser = createAsyncThunk(
     const res = await loginUserApi(data);
     setCookie('accessToken', res.accessToken);
     localStorage.setItem('refreshToken', res.refreshToken);
+    console.log(res);
     return res;
   }
 );

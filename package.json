@@ -14,6 +14,7 @@
     "@types/uuid": "^9.0.1",
     "@zlden/react-developer-burger-ui-components": "^1.15.0",
     "clsx": "^2.0.0",
+    "dotenv": "^16.4.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.4.3",
@@ -93,25 +94,12 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src",
     "lint:fix": "npm run lint -- --fix",
     "format": "prettier ./src --write",
-    "cypress:open": "cypress open",
-    "test": "jest"
+    "test": "jest",
+    "cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": [
       "plugin:storybook/recommended"
     ]
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "^@pages": "<rootDir>/src/pages",
-      "^@components": "<rootDir>/src/components",
-      "^@ui": "<rootDir>/src/components/ui",
-      "^@ui-pages": "<rootDir>/src/components/ui/pages",
-      "^@utils-types": "<rootDir>/src/utils/types",
-      "^@api": "<rootDir>/src/utils/burger-api.ts",
-      "^@slices": "<rootDir>/src/services/slices",
-      "^@selectors": "<rootDir>/src/services/selectors"
-    },
-    "testEnvironment": "jsdom"
   }
 }
