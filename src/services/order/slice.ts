@@ -2,7 +2,7 @@ import { TOrder } from '@utils-types';
 import { createSlice } from '@reduxjs/toolkit';
 import { getFeeds, getOrderByNum, getOrders, postOrder } from './action';
 
-interface IOrderState {
+export interface IOrderState {
   order: TOrder | null;
   name: string | null;
   error: string | null | undefined;
@@ -110,3 +110,4 @@ export const {
 } = orderSlice.selectors;
 
 export const { resetOrder } = orderSlice.actions;
+export default orderSlice.reducer;
